@@ -9,10 +9,10 @@
 
 struct job
 {
-  char *title;
-  char *company_name;
+  char title[32];
+  char company_name[32];
   unsigned int year;
-  char *description;
+  char description[512];
 };
 
 int main(int argc, char **argv)
@@ -75,7 +75,7 @@ int main(int argc, char **argv)
   int8_t rock_climbig, illinois_robotics_in_space = 64;
 
   /* projects */
-  char *computer_2023 = 
+  char computer_2023[512] = 
     "Created a 8-bit computer using a W65C02S microprocessor and bread boards."
     "This project was inspired by a video series created by Ben Eater"
     "(youtube series link: https://www.youtube.com/watch?v=LnzuMJLZRdU). In the"
@@ -84,7 +84,7 @@ int main(int argc, char **argv)
     "analog display. Later I hope to design a PCB for the computer and create a"
     "basic operating system.";
 
-  char *national_honors_society_website_2022 =
+  char national_honors_society_website_2022[512] =
     "Made a website for my National Honors Society project about the history of"
     "my small town Red Bud Illinois. For this project I used HTML and Java Web"
     "Applications to create a website. The address to the site is linked here:"
